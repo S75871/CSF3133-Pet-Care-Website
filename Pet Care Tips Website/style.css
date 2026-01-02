@@ -4,7 +4,7 @@
     --primary-orange: #FF8C42;
     --secondary-orange: #FFA65A;
     --light-orange: #FFE5D4;
-    --accent-orange: #FF6B35;
+    --accent-orange: #300d01;
     --header-bg: #FFF5ED;
     --banner-bg: #FF8C42;
     --dropdown-bg: #FFFAF5;
@@ -728,10 +728,19 @@ footer {
 .footer-bottom {
     background-color: #3E2416;
     text-align: center;
-    padding: 15px;
+    padding: 15px 20px;
     font-size: 0.8rem;
     color: #B8A997;
+    margin: 0;
+    width: 100%;
+    clear: both;
 }
+
+.footer-bottom p {
+    margin: 0;
+    padding: 0;
+}
+
 /* ================ END FOOTER SECTION ================ */
 
 /* RESPONSIVE DESIGN - TABLETS (768px - 1024px) */
