@@ -741,6 +741,20 @@ footer {
     padding: 0;
 }
 
+/* Footer bottom email link styling */
+.footer-bottom a {
+    color: var(--secondary-orange);
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary-orange);
+    transition: all 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+
 /* ================ END FOOTER SECTION ================ */
 
 /* RESPONSIVE DESIGN - TABLETS (768px - 1024px) */
@@ -763,6 +777,43 @@ footer {
     }
 }
 /* ================ END TABLETS RESPONSIVE ================ */
+
+/* ================ SEARCH RESULTS PAGE STYLES ================ */
+.search-results-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .search-result-item {
+            background: white;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 0px black;
+        }
+        .result-title {
+            color: #ff8c42;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .result-snippet {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .result-link {
+            color: #ff8c42;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2rem;
+        }
+/* ================ END SEARCH RESULTS PAGE STYLES ================ */
 
 /* RESPONSIVE DESIGN - MOBILE DEVICES (max-width: 768px) */
 @media (max-width: 768px) {
@@ -1032,3 +1083,497 @@ footer {
     .pet-simple-card:nth-child(6) { animation-delay: 0.6s; }
 }
 /* ================ END ANIMATIONS ================ */
+
+/* ================ REPLY SECTION STYLES ================ */
+/* Reply styling */
+.main-post {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #FFE5D4;
+}
+
+.replies-container {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.reply-item {
+    background: #FFF5ED;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-left: 3px solid var(--primary-orange);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.reply-form {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #FFE5D4;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reply-form input {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .reply-form {
+        flex-direction: column;
+    }
+    
+    .reply-form input,
+    .reply-form button {
+        width: 100% !important;
+    }
+}
+/* ================ END REPLY SECTION STYLES ================ */
+
+/* ================ TABLE STYLES ================ */
+/* Table Styling */
+.table-title {
+    text-align: center;
+    margin: 20px auto;
+    color: var(--text-brown);
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+table thead {
+    background: linear-gradient(135deg, var(--primary-orange), var(--accent-orange));
+    color: white;
+}
+
+table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #FFE5D4;
+    color: var(--text-black);
+    font-size: 0.9rem;
+}
+
+table tbody tr:hover {
+    background: #FFF5ED;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive table for mobile */
+@media (max-width: 608px) {
+    table {
+        font-size: 0.85rem;
+    }
+    
+    table th,
+    table td {
+        padding: 10px 8px;
+    }
+}
+/* ================ END TABLE STYLES ================ */
+
+/* ================ ABOUT PAGE STYLES (Extracted from about.html) ================ */
+
+/* CSS specific to the Screenshots' "Neo-Brutalist" style */
+    .tabs-container {
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .tab-btn {
+      padding: 12px 30px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      background: white;
+      border: 2px solid black;
+      border-radius: 8px;
+      box-shadow: 4px 4px 0px black;
+      /* The hard shadow effect */
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active,
+    .tab-btn:hover {
+      background: #ffb366;
+      /* Orange color from screenshot */
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px black;
+    }
+
+    .tab-content {
+      display: none;
+      /* Hidden by default */
+      text-align: left;
+      padding: 20px;
+      animation: fadeIn 0.5s;
+    }
+
+    .tab-content.active-content {
+      display: block;
+      /* Show when active */
+    }
+
+    /* Form Styling */
+    .feedback-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .feedback-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: none;
+      background-color: #fff5e6;
+      /* Light peach bg */
+      border-radius: 20px;
+      /* Rounded inputs from screenshot */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .submit-btn {
+      background-color: #ff8c42;
+      color: white;
+      border: none;
+      padding: 12px 40px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .submit-btn:hover {
+      background-color: #e67e3a;
+    }
+
+    /* --- Table Styling (FIXED) --- */
+.table-wrapper {
+    overflow: hidden; /* Changed from overflow-x: auto */
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px black;
+    border: 3px solid black;
+    max-width: 800px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    min-width: 600px;
+    border-radius: 15px; /* Match wrapper border-radius */
+    overflow: hidden; /* Clip corners */
+}
+
+.styled-table thead tr {
+    background-color: #ff8c42;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.styled-table thead tr:first-child th:first-child {
+    border-top-left-radius: 12px; /* Round top-left corner */
+}
+
+.styled-table thead tr:first-child th:last-child {
+    border-top-right-radius: 12px; /* Round top-right corner */
+}
+
+.styled-table th, .styled-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.styled-table th:first-child,
+.styled-table td:first-child {
+    text-align: left;
+}
+
+.styled-table tbody tr:nth-of-type(even) { 
+    background-color: #fff5e6; 
+}
+
+.styled-table tbody tr:hover { 
+    background-color: #ffe5d4; 
+    font-weight: 600; 
+    color: #6B4423; 
+}
+
+.styled-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.styled-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px; /* Round bottom-left corner */
+}
+
+.styled-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px; /* Round bottom-right corner */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .table-wrapper {
+        overflow-x: auto; /* Allow horizontal scroll on mobile */
+    }
+    
+    .styled-table {
+        font-size: 0.85rem;
+    }
+    
+    .styled-table th, .styled-table td {
+        padding: 10px 12px;
+    }
+}
+
+    /* Q&A Box Styling */
+    .qa-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .qa-box {
+      border: 3px solid black;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: white;
+      box-shadow: 4px 4px 0px black;
+      /* Matches the boxes in screenshot 4 */
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Select dropdown styling */
+    .feedback-form select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: none;
+        background-color: #fff5e6; /* Light peach bg - matches your inputs */
+        border-radius: 20px; /* Rounded inputs from your design */
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.95rem;
+        color: var(--text-black);
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease;
+        appearance: none; /* Remove default arrow */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23FF8C42' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        padding-right: 40px;
+    }
+
+    .feedback-form select:focus {
+        background-color: #ffe4cc;
+        box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.2);
+    }
+
+    /* Radio buttons styling */
+    .feedback-form input[type="radio"] {
+        width: auto;
+        margin-right: 8px;
+        cursor: pointer;
+        accent-color: var(--primary-orange); /* Makes radio button orange */
+    }
+
+    .feedback-form input[type="radio"]:focus {
+        outline: 2px solid var(--primary-orange);
+        outline-offset: 2px;
+    }
+
+    /* Checkbox styling */
+    .feedback-form input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        accent-color: var(--primary-orange); /* Makes checkbox orange */
+    }
+
+    .feedback-form input[type="checkbox"]:focus {
+        outline: 2px solid var(--primary-orange);
+        outline-offset: 2px;
+    }
+
+    /* Container for radio buttons and checkboxes */
+    .feedback-form .radio-group,
+    .feedback-form .checkbox-group {
+        margin-top: 10px;
+        padding: 12px;
+        background-color: #fff5e6;
+        border-radius: 20px;
+    }
+
+    /* Labels for radio and checkbox (inline display) */
+    .feedback-form label[for*="radio"],
+    .feedback-form label[for*="subscribe"],
+    .feedback-form label[for*="first-time"],
+    .feedback-form label[for*="weekly"],
+    .feedback-form label[for*="daily"] {
+        display: inline;
+        font-weight: normal;
+        cursor: pointer;
+        color: var(--text-black);
+    }
+    
+   /* --- Q&A STYLING (Updated based on Image 2) --- */
+  .qa-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .qa-card {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: white;
+    box-shadow: 6px 6px 0px black; /* Hard shadow */
+  }
+
+  /* Admin Pinned Post */
+  .qa-card.admin-post {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Question Header */
+  .qa-header {
+    font-weight: 800;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #2c2c2c;
+  }
+
+  .qa-message {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  /* Threaded Replies */
+  .qa-replies-area {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+
+  .qa-reply {
+    background-color: #FFF5E6; /* Light Peach */
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 30px; /* Space for arrow */
+  }
+
+  .qa-reply::before {
+    content: "↳";
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #6B4423;
+  }
+
+  .qa-reply strong { color: #6B4423; }
+
+  /* Reply Input Bar */
+  .qa-input-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .qa-input-bar input {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .qa-input-bar .input-name { width: 30%; }
+  .qa-input-bar .input-msg { flex-grow: 1; }
+
+  .qa-reply-btn {
+    background-color: #ff8c42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black; /* Brutalist button */
+    box-shadow: 2px 2px 0px black;
+  }
+  
+  .qa-reply-btn:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px black;
+  }
+
+  /* Mobile Responsive for Q&A Input */
+  @media (max-width: 600px) {
+    .qa-input-bar { flex-direction: column; align-items: stretch; }
+    .qa-input-bar .input-name { width: 100%; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+/* ================ END ABOUT PAGE STYLES ================ */
